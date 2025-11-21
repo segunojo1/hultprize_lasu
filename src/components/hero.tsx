@@ -4,9 +4,9 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <div className="flex min-h-screen ">
-      <div className="clip relative flex items-center pl-[59px]">
-        <div className="flex max-w-[80%] flex-col relative gap-6 my-auto h-fit">
+    <div className="flex min-h-screen min-w-full max-h-screen ">
+      <div className="clip desktop:bg-[#15223E] w-full relative flex items-center pl-[59px]">
+        <div className="flex max-w-[80%] desktop:max-w-[800px] flex-col relative gap-6 my-auto h-fit">
             <h1 className="text-[64px] poppins-bold  text-[#F5F5F7]">
               Lead the Change at LASU. Win $1M Globally.
             </h1>
@@ -46,11 +46,10 @@ const Hero = () => {
           className="absolute bottom-[11px] left-2 rotate-175"
         />
       </div>
-
-      <div className="self-end relative">
+      <div className="self-end relative desktop:w-full">
         <Image
           src="/assets/hero_woman.png"
-          width={809}
+          width={709}
           height={679}
           alt="woman"
         />
