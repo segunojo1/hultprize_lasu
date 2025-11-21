@@ -33,7 +33,7 @@ const Navbar = () => {
 
       <nav className="fixed lg:hidden inset-x-0 top-0 z-[999999] px-4 md:pt-4 pt-14">
         <div className="mx-auto max-w-[560px] w-full">
-          <div className="flex items-center justify-between rounded-full bg-[#1E1E1E]/95 px-4 py-3 text-white">
+          <div className="flex items-center justify-between rounded-full bg-[#1E1E1E]/95 px-7 py-3 text-white">
             <Logo />
             <button
               aria-label="Toggle menu"
