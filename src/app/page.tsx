@@ -1,6 +1,7 @@
 import Hero from "@/components/hero";
 import Impact from "@/components/impact";
 import Navbar from "@/components/navbar";
+import New from "@/components/new";
 import Winners from "@/components/winners";
 import Image from "next/image";
 
@@ -11,6 +12,7 @@ export default function Home() {
      <Hero />
      <Impact />
      <Winners />
+     <New />
     </div>
   );
 }

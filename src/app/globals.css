@@ -188,8 +188,16 @@
 
 .swiper-pagination { bottom: -24px !important; }
 
-.winners{
+.winners {
+  position: relative;
+  background: transparent !important;
+}
+.winners::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #15223E;
   clip-path: polygon(0 0, 100% 13%, 100% 100%, 0% 100%);
-
-  
+  z-index: -1;
+  pointer-events: none;
 }
