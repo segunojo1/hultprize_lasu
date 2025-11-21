@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <div className="flex min-h-screen 2xl:mx-auto max-h-screen 2xl:container ">
       <div className="clip desktop:bg-[#15223E] w-full relative flex items-center lg:pl-[59px] pl-[30px]">
-        <div className="flex max-w-[65%] desktop:max-w-[800px] flex-col relative md:gap-6 gap-5 my-auto h-fit">
+        <div className="flex md:max-w-[65%] max-w-[80%] desktop:max-w-[800px] flex-col relative md:gap-6 gap-5 my-auto h-fit">
             <h1 className="text-[clamp(2rem,4vw,4rem)] poppins-bold  text-[#F5F5F7]">
               Lead the Change at LASU. <br /> Win $1M Globally.
             </h1>
@@ -30,7 +30,7 @@ const Hero = () => {
               height={25}
               className="absolute hidden md:block -bottom-3.5 right-[90px]"
             />
-          <p className="text-[clamp(20px,1vw,24px)] max-w-[70%] poppins text-[#ffffffb1]">
+          <p className="text-[clamp(20px,1vw,24px)] md:max-w-[70%] max-w-[85%] poppins text-[#ffffffb1]">
             Join the 2026 Hult Prize OnCampus Program at Lagos State University.
           </p>
           <Button className="w-fit h-fit poppins bg-primary py-2.5 px-[60px] md:text-[20px] text-[16px] font-semibold rounded-[30px]">
