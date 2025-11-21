@@ -179,3 +179,17 @@
 @theme {
   --breakpoint-desktop: 140rem;
 }
+
+
+.swiper-button-prev { 
+  left: 9% !important; 
+}
+.swiper-button-next { right: 9%; }
+
+.swiper-pagination { bottom: -24px !important; }
+
+.winners{
+  clip-path: polygon(0 0, 100% 13%, 100% 100%, 0% 100%);
+
+  
+}

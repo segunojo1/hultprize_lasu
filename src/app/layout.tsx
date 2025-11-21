@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
-
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
 
 export const metadata: Metadata = {
   title: "Hult Prize Website",
@@ -14,11 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`poppins font-sans`}
-      >
-        {children}
-      </body>
+      <body className={`poppins font-sans`}>{children}</body>
     </html>
   );
 }

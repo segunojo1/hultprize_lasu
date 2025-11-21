@@ -63,7 +63,7 @@ const Hero = () => {
         />
         <Image
           src="/assets/cross.svg"
-          alt="circle"
+          alt="cross"
           width={25}
           height={25}
           className="absolute bottom-[43px] right-[35px]"

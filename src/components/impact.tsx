@@ -50,7 +50,7 @@ const Impact = () => {
                 alt="circle"
                 width={133}
                 height={128}
-                className="absolute bottom-[165px] right-[46px] rotate-[175deg]"
+                className="absolute bottom-[165px] right-[46px] rotate-175"
               />
     </section>
   );
