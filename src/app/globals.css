@@ -170,10 +170,19 @@
 }
 .clip{
   background-image: url('/assets/hero_bg.svg');
-  background-position: right top;
-    background-size: 100%;
+  background-size: auto 100%;
+  background-position: left top;
     background-repeat: no-repeat;
     /* clip-path: path("M100% 0 C85% 5%, 80% 15%, 74% 23% C70% 28%, 68% 29%, 65% 27% C70% 45%, 78% 55%, 81% 65% C79% 70%, 77% 72%, 75% 73% C50% 90%, 20% 100%, 0 100% L0 0 Z"); */
+}
+
+@media screen and (max-width: 800px) {
+.clip{
+    background-image: url('/assets/hero_bg_mobile.svg');
+    background-size: contain;
+      background-position: left top;
+
+}
 }
 
 @theme {

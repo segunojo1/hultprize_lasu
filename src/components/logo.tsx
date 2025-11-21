@@ -6,6 +6,7 @@ const Logo = () => {
         <Image
             src="/assets/hultprize_logo.svg"
             alt="Hult Prize Logo"
+            className='w-[24px] md:w-[60px]'
             width={60}
             height={60}
         />

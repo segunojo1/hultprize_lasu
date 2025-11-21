@@ -23,7 +23,7 @@ const Impact = () => {
         />
       </div>
 
-      <div className="flex items-center gap-5 mt-[98px]">
+      <div className="flex lg:flex-row flex-col items-center gap-5 mt-[98px]">
         {impactData.map((data, index) => (
           <ImpactBox key={index} number={data.number} title={data.title} />
         ))}
