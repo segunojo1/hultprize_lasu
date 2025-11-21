@@ -190,7 +190,6 @@
 
 .winners {
   position: relative;
-  background: transparent !important;
 }
 .winners::before {
   content: "";
