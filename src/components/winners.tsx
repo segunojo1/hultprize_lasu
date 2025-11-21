@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Image from "next/image";
 import { useRef } from "react";
 import { A11y, Navigation, Pagination, Scrollbar } from "swiper/modules";
@@ -12,10 +12,10 @@ const Winners = () => {
   const prevRef = useRef<HTMLButtonElement | null>(null);
   const nextRef = useRef<HTMLButtonElement | null>(null);
   return (
-    <div className="bg-[#15223E] overflow-visible winners relative text-[#F9F7F4] flex flex-col py-[142px] items-center ">
-      <h2 className="text-[24px] poppins-regular mb-2">Gentle Rise</h2>
+    <div className="bg-[#15223E] overflow-hidden winners relative text-[#F9F7F4] flex flex-col py-[142px] items-center ">
+      <h2 className="md:text-[24px] text-[14px] poppins-regular mb-2">Gentle Rise</h2>
       <span className="relative">
-        <h3 className="text-[48px] poppins-extrabold">
+        <h3 className="text-[clamp(20px,3vw,48px)] poppins-extrabold">
           Meet Our 2025 LASU Champions
         </h3>
         <Image
@@ -23,24 +23,25 @@ const Winners = () => {
           alt=""
           width={232}
           height={20}
-          className="absolute right-5 -bottom-3"
+          className="absolute md:w-[232px] w-[106px] md:h-[20px] h-[10px]  md:right-5 right-1 md:-bottom-3"
         />
       </span>
 
-      <section className="w-full mt-16">
+      <section className="w-full mt-[130px]">
         <div className="relative">
-          {/* Custom Nav Buttons */}
           <button
             ref={prevRef}
             aria-label="Previous slide"
-            className="absolute left-[9%] top-1/2 -translate-y-1/2 z-10 h-11 w-11 rounded-full bg-[#E6E6E6] text-[#111] shadow-[0_2px_10px_rgba(0,0,0,0.15)] flex items-center justify-center"
+            className="absolute md:left-[10%] left-[0%] top-1/2 -translate-y-1/2 z-10 h-11 w-11 rounded-full bg-[#E6E6E6] text-[#111] shadow-[0_2px_10px_rgba(0,0,0,0.15)] flex items-center justify-center"
           >
-            <span className="inline-block rotate-180 text-[18px] leading-none">➜</span>
+            <span className="inline-block rotate-180 text-[18px] leading-none">
+              ➜
+            </span>
           </button>
           <button
             ref={nextRef}
             aria-label="Next slide"
-            className="absolute right-[9%] top-1/2 -translate-y-1/2 z-10 h-11 w-11 rounded-full bg-[#E6E6E6] text-[#111] shadow-[0_2px_10px_rgba(0,0,0,0.15)] flex items-center justify-center"
+            className="absolute md:right-[10%] right-[0%] top-1/2 -translate-y-1/2 z-10 h-11 w-11 rounded-full bg-[#E6E6E6] text-[#111] shadow-[0_2px_10px_rgba(0,0,0,0.15)] flex items-center justify-center"
           >
             <span className="text-[18px] leading-none">➜</span>
           </button>
@@ -59,42 +60,60 @@ const Winners = () => {
             pagination={{ clickable: true }}
             className="w-full"
           >
-          <SwiperSlide>
-            <div className="mx-auto max-w-[1100px] rounded-2xl border-4 border-[#FFFFFF] px-[60px]  py-[93.5px] relative">
-              <div className="flex items-center gap-10">
-                <div className="relative shrink-0">
-                  <div className="absolute -left-10 -top-6 h-[297px] w-[297px] rounded-full bg-[#1BBF85]" />
-                  <div className="relative h-[231px] w-[272px] overflow-hidden rounded-2xl ring-4 ring-[#F9F7F4]">
-                    <Image src="/assets/winner_1.jpg" alt="winner" fill className="object-cover" />
+            <SwiperSlide>
+              <div className="md:mx-auto max-w-[1100px] mx-[20px] rounded-2xl border-4 border-[#FFFFFF] px-[60px]  py-[93.5px] relative">
+                <div className="flex md:flex-row flex-col items-center gap-10">
+                  <div className="relative shrink-0">
+                    <div className="absolute -left-10 -top-6 h-[157px] md:h-[297px] w-[157px] md:w-[297px] rounded-full bg-[#1BBF85]" />
+                    <div className="relative w-[143px] md:h-[231px] h-[122px] md:w-[272px] overflow-hidden rounded-2xl ring-4 ring-[#F9F7F4]">
+                      <Image
+                        src="/assets/stat_bg.png"
+                        alt="winner"
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                  </div>
+                  <div className="flex-1">
+                    <h4 className="md:text-[28px] text-[20px] poppins-extrabold text-primary">
+                      Team Konsume (2025 Winners)
+                    </h4>
+                    <p className="mt-3 md:text-[16px] text-[15px] leading-relaxed text-[#F9F7F4]/80 max-w-[620px]">
+                      “Hult Prize gave us more than a platform; it gave us the
+                      mentors and momentum to turn our idea into a real-world
+                      impact. We're proof that a team from LASU can build a
+                      solution that leads the change on a global stage”.
+                    </p>
                   </div>
                 </div>
-                <div className="flex-1">
-                  <h4 className="text-[28px] poppins-extrabold text-primary">Team Konsume (2025 Winners)</h4>
-                  <p className="mt-3 text-[16px] leading-relaxed text-[#F9F7F4]/80 max-w-[620px]">
-                    “Hult Prize gave us more than a platform; it gave us the mentors and momentum to turn our idea into a real-world impact. We're proof that a team from LASU can build a solution that leads the change on a global stage”.
-                  </p>
-                </div>
               </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="mx-auto max-w-[1100px] rounded-2xl border border-[#F9F7F4]/80 p-8 relative">
-              <div className="flex items-center gap-10">
-                <div className="relative shrink-0">
-                  <div className="absolute -left-10 top-6 h-[170px] w-[170px] rounded-full bg-[#1BBF85]" />
-                  <div className="relative h-[190px] w-[250px] overflow-hidden rounded-2xl ring-2 ring-white/70">
-                    <Image src="/assets/winner_2.jpg" alt="winner" fill className="object-cover" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="mx-auto max-w-[1100px] rounded-2xl border border-[#F9F7F4]/80 p-8 relative">
+                <div className="flex items-center gap-10">
+                  <div className="relative shrink-0">
+                    <div className="absolute -left-10 top-6 h-[170px] w-[170px] rounded-full bg-[#1BBF85]" />
+                    <div className="relative h-[190px] w-[250px] overflow-hidden rounded-2xl ring-2 ring-white/70">
+                      <Image
+                        src="/assets/stat_bg.png"
+                        alt="winner"
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                  </div>
+                  <div className="flex-1">
+                    <h4 className="text-[28px] poppins-extrabold text-primary">
+                      Team Clark
+                    </h4>
+                    <p className="mt-3 text-[16px] leading-relaxed text-[#F9F7F4]/80 max-w-[620px]">
+                      Short description about the team goes here to match the
+                      card layout.
+                    </p>
                   </div>
                 </div>
-                <div className="flex-1">
-                  <h4 className="text-[28px] poppins-extrabold text-primary">Team Clark</h4>
-                  <p className="mt-3 text-[16px] leading-relaxed text-[#F9F7F4]/80 max-w-[620px]">
-                    Short description about the team goes here to match the card layout.
-                  </p>
-                </div>
               </div>
-            </div>
-          </SwiperSlide>
+            </SwiperSlide>
           </Swiper>
         </div>
       </section>
@@ -104,14 +123,14 @@ const Winners = () => {
         alt="blob"
         width={156}
         height={156}
-        className="absolute top-[73px] left-[31px]"
+        className="absolute  md:block hidden top-[73px] left-[31px]"
       />
       <Image
         src="/assets/blob-pink.svg"
         alt="blob"
         width={133}
         height={133}
-        className="absolute top-[145px] right-[142px]"
+        className="absolute  md:block hidden top-[145px] right-[142px]"
       />
       <Image
         src="/assets/cross.svg"
@@ -125,14 +144,14 @@ const Winners = () => {
         alt="blob"
         width={80}
         height={80}
-        className="absolute bottom-[33px] left-[232px]"
+        className="absolute  md:block hidden bottom-[33px] left-[232px]"
       />
-<Image
+      <Image
         src="/assets/blob-green.svg"
         alt="blob"
         width={414}
         height={414}
-        className="absolute -bottom-[155px] z-[99999999] -right-[150px]"
+        className="absolute  md:block hidden -bottom-[155px] z-[99999999] -right-[150px]"
       />
       <style jsx global>{`
         .swiper-button-prev,
@@ -142,18 +161,26 @@ const Winners = () => {
           background: #e6e6e6;
           color: #111;
           border-radius: 9999px;
-          box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
         }
         .swiper-button-prev:after,
         .swiper-button-next:after {
           font-size: 16px;
           font-weight: 700;
         }
-        .swiper-button-prev { left: 9%; }
-        .swiper-button-next { right: 9%; }
+        .swiper-button-prev {
+          left: 9%;
+        }
+        .swiper-button-next {
+          right: 9%;
+        }
         @media (max-width: 1024px) {
-          .swiper-button-prev { left: 2%; }
-          .swiper-button-next { right: 2%; }
+          .swiper-button-prev {
+            left: 2%;
+          }
+          .swiper-button-next {
+            right: 2%;
+          }
         }
         .swiper-pagination-bullet {
           background: #ff3ea5;
