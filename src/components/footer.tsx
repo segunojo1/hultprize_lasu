@@ -40,17 +40,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    href="/about"
-                    className="font-poppins text-[18px] font-normal leading-[100%] tracking-[0px] text-white transition-opacity duration-200 hover:opacity-80"
-                    tabIndex={0}
-                    aria-label="About Hult Prize"
-                  >
-                    About
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/register"
+                    href="https://forms.gle/a9WKrQr21KkzeNnR9"
                     className="font-poppins text-[18px] font-normal leading-[100%] tracking-[0px] text-white transition-opacity duration-200 hover:opacity-80"
                     tabIndex={0}
                     aria-label="Register your team"
@@ -68,7 +58,7 @@ const Footer = () => {
             </h3>
             <div className="grid grid-cols-1 gap-4 justify-items-start lg:justify-items-end">
               <Link
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/company/hult-prize-lagos-state-university"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white transition-opacity duration-200 hover:opacity-70"
@@ -88,7 +78,7 @@ const Footer = () => {
               </Link>
 
               <Link
-                href="https://x.com"
+                href="https://x.com/hultprize__lasu"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white transition-opacity duration-200 hover:opacity-70"
@@ -108,7 +98,7 @@ const Footer = () => {
               </Link>
 
               <Link
-                href="https://instagram.com"
+                href="https://www.instagram.com/hultprize._lasu/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white transition-opacity duration-200 hover:opacity-70"

@@ -1,10 +1,32 @@
 import Image from "next/image";
 import { Button } from "./ui/button";
+import Link from "next/link";
 
 const impactData = [
-  { number: "30+", title: " Teams Coached & Supported", icon: "circle", iconPosBottom: "205px", iconPosLeft: "27px", iconSize: 25},
-  { number: "70+", title: "Student Entrepreneurs", icon: "circle", iconPosBottom: "36px", iconPosLeft: "56px", iconSize: 40 },
-  { number: "3", title: "Teams at the nationals", icon: "cross", iconPosBottom: "200px", iconPosLeft: "290px", iconSize: 25 },
+  {
+    number: "30+",
+    title: " Teams Coached & Supported",
+    icon: "circle",
+    iconPosBottom: "205px",
+    iconPosLeft: "27px",
+    iconSize: 25,
+  },
+  {
+    number: "70+",
+    title: "Student Entrepreneurs",
+    icon: "circle",
+    iconPosBottom: "36px",
+    iconPosLeft: "56px",
+    iconSize: 40,
+  },
+  {
+    number: "3",
+    title: "Teams at the nationals",
+    icon: "cross",
+    iconPosBottom: "200px",
+    iconPosLeft: "290px",
+    iconSize: 25,
+  },
 ];
 const Impact = () => {
   return (
@@ -27,7 +49,15 @@ const Impact = () => {
 
       <div className="flex lg:flex-row flex-col items-center gap-5 md:mt-[98px] mt-[30px]">
         {impactData.map((data, index) => (
-          <ImpactBox key={index} iconSize={data.iconSize} number={data.number} title={data.title} icon={data.icon} iconPosBottom={data.iconPosBottom} iconPosLeft={data.iconPosLeft} />
+          <ImpactBox
+            key={index}
+            iconSize={data.iconSize}
+            number={data.number}
+            title={data.title}
+            icon={data.icon}
+            iconPosBottom={data.iconPosBottom}
+            iconPosLeft={data.iconPosLeft}
+          />
         ))}
       </div>
 
@@ -37,7 +67,13 @@ const Impact = () => {
           the idea.
         </p>
         <Button className="h-full poppins-semibold bg-primary py-2.5 px-[60px] text-[20px] font-semibold rounded-[30px]">
-          Register Team
+          <Link
+            href="https://forms.gle/a9WKrQr21KkzeNnR9"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Register Team
+          </Link>
         </Button>
       </div>
       <Image
@@ -66,14 +102,14 @@ export const ImpactBox = ({
   icon,
   iconPosBottom,
   iconPosLeft,
-  iconSize
+  iconSize,
 }: {
   number: string;
   title: string;
   icon: string;
-  iconPosBottom: string
+  iconPosBottom: string;
   iconPosLeft: string;
-  iconSize: number
+  iconSize: number;
 }) => {
   return (
     <div className="relative h-[321px] shadow-[0_4px_60px_4px_rgba(0,0,0,0.1)] pt-16 pr-[116px] pb-[50px] pl-[90px] rounded-[20px] flex items-center flex-col justify-center text-center bg-[url(/assets/stat_bg.png)] bg-size-[173px] bg-no-repeat bg-center ">
@@ -91,7 +127,7 @@ export const ImpactBox = ({
         height={40}
         style={{
           bottom: iconPosBottom,
-          left: iconPosLeft
+          left: iconPosLeft,
         }}
         className={`absolute `}
       />

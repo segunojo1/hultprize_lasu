@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { Button } from "./ui/button";
 
 const PartnerWithUs = () => {
@@ -30,7 +31,9 @@ const PartnerWithUs = () => {
           aria-label="Explore partnership opportunities with Hult Prize LASU"
           tabIndex={0}
         >
-          Explore Partnership Opportunities
+          <Link href="/">
+            Explore Partnership Opportunities
+          </Link>
         </Button>
       </div>
     </section>

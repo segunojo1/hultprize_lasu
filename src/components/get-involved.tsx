@@ -14,6 +14,7 @@ const GetInvolved = () => {
       backgroundColor: "bg-[#ED2089]",
       imageSrc: "/assets/hult-img.png",
       imageAlt: "Compete and Innovate",
+      buttonHref: "https://forms.gle/a9WKrQr21KkzeNnR9"
     },
     {
       id: 2,
@@ -24,6 +25,7 @@ const GetInvolved = () => {
       backgroundColor: "bg-[#06B479]",
       imageSrc: "/assets/hult-img.png",
       imageAlt: "Lead Local Movement",
+      buttonHref: "/"
     },
     {
       id: 3,
@@ -34,6 +36,7 @@ const GetInvolved = () => {
       backgroundColor: "bg-[#15223E]",
       imageSrc: "/assets/hult-img.png",
       imageAlt: "Guide Our Innovators",
+      buttonHref: "/"
     },
     {
       id: 4,
@@ -44,6 +47,7 @@ const GetInvolved = () => {
       backgroundColor: "bg-[#191919]",
       imageSrc: "/assets/hult-img.png",
       imageAlt: "Community & Socials",
+      buttonHref: "https://lnk.bio/hultprize_lasu"
     },
   ];
 
@@ -82,6 +86,7 @@ const GetInvolved = () => {
               backgroundColor={card.backgroundColor}
               imageSrc={card.imageSrc}
               imageAlt={card.imageAlt}
+              buttonHref={card.buttonHref}
             />
           ))}
         </div>

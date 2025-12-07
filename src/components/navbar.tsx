@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import Logo from "./logo";
 import { Button } from "./ui/button";
 import { useState, useMemo } from "react";
@@ -8,9 +9,7 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
   const clip = useMemo(
     () => ({
-      WebkitClipPath: open
-        ? "circle(150% at 100% 0)"
-        : "circle(0px at 100% 0)",
+      WebkitClipPath: open ? "circle(150% at 100% 0)" : "circle(0px at 100% 0)",
       clipPath: open ? "circle(150% at 100% 0)" : "circle(0px at 100% 0)",
       transition: "clip-path 500ms ease, -webkit-clip-path 500ms ease",
     }),
@@ -23,10 +22,29 @@ const Navbar = () => {
           <Logo />
           <div className="flex items-center gap-10">
             <ul className="flex items-center gap-10">
-              <li className="p-2.5 text-[20px] font-medium ">Home</li>
-              <li className="p-2.5 text-[20px] font-medium ">Contact</li>
+              <li className="p-2.5 text-[20px] font-medium ">
+                <Link href="/">
+                  Home
+                </Link>
+              </li>
+              <li className="p-2.5 text-[20px] font-medium ">
+                <Link href="/">
+                  Contact
+                </Link>
+              </li>
             </ul>
-            <Button className="h-full poppins-semibold bg-primary py-2.5 px-[60px] text-[20px] font-semibold rounded-[30px]">Register Team</Button>
+            <Button
+              asChild
+              className="h-full poppins-semibold bg-primary py-2.5 px-[60px] text-[20px] font-semibold rounded-[30px]"
+            >
+              <Link
+                href="https://forms.gle/a9WKrQr21KkzeNnR9"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Register Team
+              </Link>
+            </Button>
           </div>
         </div>
       </nav>
@@ -70,11 +88,28 @@ const Navbar = () => {
         {open && (
           <div className="fixed inset-0 z-[999901] text-white flex flex-col items-center justify-center gap-8 text-center px-6">
             <ul className="space-y-6 text-[22px] font-medium">
-              <li>Home</li>
-              <li>Contact</li>
+              <li>
+                <Link href="/" onClick={() => setOpen(false)}>
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link href="/" onClick={() => setOpen(false)}>
+                  Contact
+                </Link>
+              </li>
             </ul>
-            <Button className="poppins-semibold bg-primary py-3 px-14 h-fit text-[20px] font-semibold rounded-[30px]">
-              Register Team
+            <Button
+              asChild
+              className="poppins-semibold bg-primary py-3 px-14 h-fit text-[20px] font-semibold rounded-[30px]"
+            >
+              <Link
+                href="https://forms.gle/a9WKrQr21KkzeNnR9"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Register Team
+              </Link>
             </Button>
           </div>
         )}

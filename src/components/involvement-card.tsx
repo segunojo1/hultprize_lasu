@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { Button } from "./ui/button";
+import Link from "next/link";
 
 interface InvolvementCardProps {
   title: string;
@@ -11,6 +12,7 @@ interface InvolvementCardProps {
   backgroundColor: string;
   imageSrc: string;
   imageAlt: string;
+  buttonHref: string
 }
 
 export const InvolvementCard = ({
@@ -21,6 +23,7 @@ export const InvolvementCard = ({
   backgroundColor,
   imageSrc,
   imageAlt,
+  buttonHref
 }: InvolvementCardProps) => {
   return (
     <div
@@ -52,11 +55,12 @@ export const InvolvementCard = ({
             </div>
 
             <Button
+              asChild
               className={`${buttonColor} h-10 w-full gap-2.5 rounded-[30px] px-8 py-2.5 font-semibold opacity-100 transition-all duration-200 hover:text-inherit lg:w-[288px] lg:px-[60px]`}
               aria-label={`${buttonText} for ${title}`}
               tabIndex={0}
             >
-              {buttonText}
+              <Link href={buttonHref}>{buttonText}</Link>
             </Button>
           </div>
         </div>

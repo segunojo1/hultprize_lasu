@@ -185,6 +185,14 @@
 }
 }
 
+@media screen and (min-width: 1800px) {
+.clip{
+    background-image: none;
+    background-color: #15223E;
+
+}
+}
+
 @theme {
   --breakpoint-desktop: 140rem;
 }

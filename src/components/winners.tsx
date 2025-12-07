@@ -89,11 +89,11 @@ const Winners = () => {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="mx-auto max-w-[1100px] rounded-2xl border border-[#F9F7F4]/80 p-8 relative">
-                <div className="flex items-center gap-10">
+              <div className="md:mx-auto max-w-[1100px] mx-[20px] rounded-2xl border-4 border-[#FFFFFF] px-[60px]  py-[93.5px] relative">
+                <div className="flex md:flex-row flex-col items-center gap-10">
                   <div className="relative shrink-0">
-                    <div className="absolute -left-10 top-6 h-[170px] w-[170px] rounded-full bg-[#1BBF85]" />
-                    <div className="relative h-[190px] w-[250px] overflow-hidden rounded-2xl ring-2 ring-white/70">
+                    <div className="absolute -left-10 -top-6 h-[157px] md:h-[297px] w-[157px] md:w-[297px] rounded-full bg-[#1BBF85]" />
+                    <div className="relative w-[143px] md:h-[231px] h-[122px] md:w-[272px] overflow-hidden rounded-2xl ring-4 ring-[#F9F7F4]">
                       <Image
                         src="/assets/stat_bg.png"
                         alt="winner"
@@ -103,12 +103,14 @@ const Winners = () => {
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h4 className="text-[28px] poppins-extrabold text-primary">
-                      Team Clark
+                    <h4 className="md:text-[28px] text-[20px] poppins-extrabold text-primary">
+                      Team Clark (2025 Runner up)
                     </h4>
-                    <p className="mt-3 text-[16px] leading-relaxed text-[#F9F7F4]/80 max-w-[620px]">
-                      Short description about the team goes here to match the
-                      card layout.
+                    <p className="mt-3 md:text-[16px] text-[15px] leading-relaxed text-[#F9F7F4]/80 max-w-[620px]">
+                      “Hult Prize gave us more than a platform; it gave us the
+                      mentors and momentum to turn our idea into a real-world
+                      impact. We're proof that a team from LASU can build a
+                      solution that leads the change on a global stage”.
                     </p>
                   </div>
                 </div>

@@ -23,7 +23,7 @@ const Hero = () => {
               height={25}
               className="absolute hidden md:block -top-14 left-[281px]"
             />
-             <Image
+            <Image
               src="/assets/cross.svg"
               alt="cross"
               width={25}
