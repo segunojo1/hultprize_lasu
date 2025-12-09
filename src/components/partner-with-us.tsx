@@ -31,7 +31,7 @@ const PartnerWithUs = () => {
           aria-label="Explore partnership opportunities with Hult Prize LASU"
           tabIndex={0}
         >
-          <Link href="/">
+          <Link href="https://forms.gle/a57uPr9smV3bfY3f7" target="_blank" rel="noopener noreferrer">
             Explore Partnership Opportunities
           </Link>
         </Button>

@@ -14,7 +14,7 @@ const GetInvolved = () => {
       backgroundColor: "bg-[#ED2089]",
       imageSrc: "/assets/hult-img.png",
       imageAlt: "Compete and Innovate",
-      buttonHref: "https://forms.gle/a9WKrQr21KkzeNnR9"
+      buttonHref: "/"
     },
     {
       id: 2,
@@ -36,7 +36,7 @@ const GetInvolved = () => {
       backgroundColor: "bg-[#15223E]",
       imageSrc: "/assets/hult-img.png",
       imageAlt: "Guide Our Innovators",
-      buttonHref: "/"
+      buttonHref: "https://forms.gle/VSbfrwGT4bnfZv31A"
     },
     {
       id: 4,
