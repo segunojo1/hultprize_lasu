@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Button } from "./ui/button";
 import Image from "next/image";
 
@@ -33,8 +34,14 @@ const Hero = () => {
           <p className="text-[clamp(20px,1vw,24px)] md:max-w-[70%] max-w-[85%] poppins text-[#ffffffb1]">
             Join the 2026 Hult Prize OnCampus Program at Lagos State University.
           </p>
-          <Button className="w-fit h-fit poppins bg-primary py-2.5 px-[60px] md:text-[20px] text-[16px] font-semibold rounded-[30px]">
-            Register Team
+          <Button asChild className="w-fit h-fit poppins bg-primary py-2.5 px-[60px] md:text-[20px] text-[16px] font-semibold rounded-[30px]">
+            <Link
+                href="https://forms.gle/a9WKrQr21KkzeNnR9"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Register Team
+              </Link>
           </Button>
         </div>
         <Image
