@@ -67,7 +67,7 @@ const Winners = () => {
                     <div className="absolute -left-10 -top-6 h-[157px] md:h-[297px] w-[157px] md:w-[297px] rounded-full bg-[#1BBF85]" />
                     <div className="relative w-[143px] md:h-[231px] h-[122px] md:w-[272px] overflow-hidden rounded-2xl ring-4 ring-[#F9F7F4]">
                       <Image
-                        src="/assets/stat_bg.png"
+                        src="/assets/team_konsume.jpg"
                         alt="winner"
                         fill
                         className="object-cover"
@@ -95,7 +95,7 @@ const Winners = () => {
                     <div className="absolute -left-10 -top-6 h-[157px] md:h-[297px] w-[157px] md:w-[297px] rounded-full bg-[#1BBF85]" />
                     <div className="relative w-[143px] md:h-[231px] h-[122px] md:w-[272px] overflow-hidden rounded-2xl ring-4 ring-[#F9F7F4]">
                       <Image
-                        src="/assets/stat_bg.png"
+                        src="/assets/team_clark.jpg"
                         alt="winner"
                         fill
                         className="object-cover"
