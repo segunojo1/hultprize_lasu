@@ -3,6 +3,7 @@ import img0047 from "@/app/blogs/whisper-ai-emerges-victorious/assets/IMG-202603
 import img0053 from "@/app/blogs/whisper-ai-emerges-victorious/assets/IMG-20260301-WA0053.jpg";
 import img0058 from "@/app/blogs/whisper-ai-emerges-victorious/assets/IMG_0058.jpg";
 import img9708 from "@/app/blogs/whisper-ai-emerges-victorious/assets/IMG_9708.jpg";
+import img9729 from "@/app/blogs/whisper-ai-emerges-victorious/assets/IMG_9729.jpg";
 import img9768 from "@/app/blogs/whisper-ai-emerges-victorious/assets/IMG_9768.jpg";
 import img9823 from "@/app/blogs/whisper-ai-emerges-victorious/assets/IMG_9823.jpg";
 import img9830 from "@/app/blogs/whisper-ai-emerges-victorious/assets/IMG_9830.jpg";
@@ -73,6 +74,12 @@ export const featuredPost = {
     "70+ students were reached through the program pipeline.",
     "WhisperAI advances to the National and Regional rounds.",
   ],
+  campusDirectorImage: {
+    src: img9729,
+    alt: "Campus Director Ashiru Sheriffdeen Olanrewaju",
+    caption:
+      "Campus Director Ashiru Sheriffdeen Olanrewaju addressing the quality of innovation produced this year.",
+  },
   gallery: [
     {
       src: img0058,
@@ -111,7 +118,7 @@ export const featuredPost = {
       aspect: "square",
     },
     {
-      src: img0058,
+      src: img9848,
       alt: "Team collaboration scene",
       caption: "WhisperAI stood out for traction and execution.",
       aspect: "wide",

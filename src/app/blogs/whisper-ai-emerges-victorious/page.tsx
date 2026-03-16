@@ -18,6 +18,11 @@ const aspectClassMap = {
 } as const;
 
 export default function WhisperAiArticlePage() {
+  const sectionAnchors = featuredPost.sections.map((section, index) => ({
+    id: `section-${index + 1}`,
+    heading: section.heading,
+  }));
+
   const galleryChunks = [
     featuredPost.gallery.slice(0, 2),
     featuredPost.gallery.slice(2, 4),
@@ -107,14 +112,37 @@ export default function WhisperAiArticlePage() {
             </p>
 
             {featuredPost.sections.map((section, index) => (
-              <div key={section.heading} className="mt-10">
+              <div
+                id={sectionAnchors[index].id}
+                key={section.heading}
+                className="mt-10 scroll-mt-32"
+              >
                 <h2 className="text-2xl font-bold leading-tight text-[#15223E] sm:text-3xl">
                   {section.heading}
                 </h2>
 
                 <div className="mt-5 space-y-5 text-base leading-8 text-[#15223E]/80 sm:text-lg">
-                  {section.paragraphs.map((paragraph) => (
-                    <p key={paragraph}>{paragraph}</p>
+                  {section.paragraphs.map((paragraph, paragraphIndex) => (
+                    <div key={paragraph}>
+                      <p>{paragraph}</p>
+
+                      {index === 4 && paragraphIndex === 1 && (
+                        <figure className="mt-6 overflow-hidden rounded-[28px] bg-[#F4F2EE] shadow-[0_18px_45px_rgba(21,34,62,0.08)]">
+                          <div className="relative aspect-16/10 overflow-hidden">
+                            <Image
+                              src={featuredPost.campusDirectorImage.src}
+                              alt={featuredPost.campusDirectorImage.alt}
+                              fill
+                              className="object-cover"
+                              sizes="(max-width: 768px) 100vw, 70vw"
+                            />
+                          </div>
+                          <figcaption className="px-5 py-4 text-sm leading-6 text-[#15223E]/70">
+                            {featuredPost.campusDirectorImage.caption}
+                          </figcaption>
+                        </figure>
+                      )}
+                    </div>
                   ))}
                 </div>
 
@@ -163,10 +191,14 @@ export default function WhisperAiArticlePage() {
                 Quick navigation
               </p>
               <div className="mt-4 space-y-3">
-                {featuredPost.sections.map((section, index) => (
-                  <div key={section.heading} className="rounded-[20px] bg-white/8 px-4 py-3 text-sm leading-6 text-white/86">
+                {sectionAnchors.map((section, index) => (
+                  <Link
+                    key={section.id}
+                    href={`#${section.id}`}
+                    className="block rounded-[20px] bg-white/8 px-4 py-3 text-sm leading-6 text-white/86 transition-colors duration-200 hover:bg-white/15"
+                  >
                     {index + 1}. {section.heading}
-                  </div>
+                  </Link>
                 ))}
               </div>
             </div>
