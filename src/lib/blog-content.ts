@@ -1,5 +1,17 @@
+import type { StaticImageData } from "next/image";
+import img0047 from "@/app/blogs/whisper-ai-emerges-victorious/assets/IMG-20260301-WA0047.jpg";
+import img0053 from "@/app/blogs/whisper-ai-emerges-victorious/assets/IMG-20260301-WA0053.jpg";
+import img0058 from "@/app/blogs/whisper-ai-emerges-victorious/assets/IMG_0058.jpg";
+import img9708 from "@/app/blogs/whisper-ai-emerges-victorious/assets/IMG_9708.jpg";
+import img9768 from "@/app/blogs/whisper-ai-emerges-victorious/assets/IMG_9768.jpg";
+import img9823 from "@/app/blogs/whisper-ai-emerges-victorious/assets/IMG_9823.jpg";
+import img9830 from "@/app/blogs/whisper-ai-emerges-victorious/assets/IMG_9830.jpg";
+import img9848 from "@/app/blogs/whisper-ai-emerges-victorious/assets/IMG_9848.jpg";
+import img9878 from "@/app/blogs/whisper-ai-emerges-victorious/assets/IMG_9878.jpg";
+import img9912 from "@/app/blogs/whisper-ai-emerges-victorious/assets/IMG_9912.jpg";
+
 export type BlogImage = {
-  src: string;
+  src: string | StaticImageData;
   alt: string;
   caption: string;
   aspect: "square" | "portrait" | "landscape" | "wide";
@@ -15,8 +27,8 @@ export const featuredPost = {
   eventDate: "February 27, 2026",
   author: "Hult Prize LASU Media Team",
   readTime: "6 min read",
-  heroImage: "/assets/hult-img.png",
-  heroAlt: "Hult Prize LASU showcase moment",
+  heroImage: img0058,
+  heroAlt: "WhisperAI team picture after emerging victorious",
   sections: [
     {
       heading: "A charged finale for LASU innovators",
@@ -63,73 +75,67 @@ export const featuredPost = {
   ],
   gallery: [
     {
-      src: "/assets/hult-img.png",
+      src: img0058,
       alt: "Audience and event branding",
-      caption: "Opening moments of the grand finale.",
+      caption: "WhisperAI team picture from the finale.",
       aspect: "landscape",
     },
     {
-      src: "/assets/team_konsume.jpg",
+      src: img0047,
       alt: "Student founders in discussion",
       caption: "Student teams refining their final showcase.",
       aspect: "portrait",
     },
     {
-      src: "/assets/team_clark.jpg",
+      src: img0053,
       alt: "Pitch session snapshot",
       caption: "Pitch energy stayed high throughout the event.",
       aspect: "square",
     },
     {
-      src: "/assets/hult-img.png",
-      alt: "Mentorship session visual",
-      caption: "Months of training shaped stronger ventures.",
-      aspect: "wide",
-    },
-    {
-      src: "/assets/team_konsume.jpg",
+      src: img9708,
       alt: "Judges and teams at demo day",
       caption: "Demo Day feedback sharpened each solution.",
       aspect: "landscape",
     },
     {
-      src: "/assets/team_clark.jpg",
+      src: img9768,
       alt: "Founder presentation frame",
       caption: "Founders pitched with clarity and confidence.",
       aspect: "portrait",
     },
     {
-      src: "/assets/hult-img.png",
+      src: img9823,
       alt: "Campus innovation atmosphere",
       caption: "The campus atmosphere reflected the Unlimited theme.",
       aspect: "square",
     },
     {
-      src: "/assets/team_konsume.jpg",
+      src: img0058,
       alt: "Team collaboration scene",
       caption: "WhisperAI stood out for traction and execution.",
       aspect: "wide",
     },
     {
-      src: "/assets/team_clark.jpg",
+      src: img9830,
       alt: "Innovation showcase image",
       caption: "Other finalists also delivered standout ideas.",
       aspect: "landscape",
     },
     {
-      src: "/assets/hult-img.png",
+      src: img9878,
       alt: "Audience reaction during announcement",
       caption: "Every announcement carried real excitement.",
       aspect: "portrait",
     },
     {
-      src: "/assets/team_konsume.jpg",
+      src: img9912,
       alt: "Winning moment visual",
       caption: "Momentum now shifts to national preparation.",
       aspect: "square",
     },
     {
-      src: "/assets/team_clark.jpg",
+      src: img0058,
       alt: "Closing celebration image",
       caption: "LASU’s next generation of disruptors is ready.",
       aspect: "wide",
