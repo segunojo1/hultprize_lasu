@@ -28,6 +28,11 @@ const Navbar = () => {
                 </Link>
               </li>
               <li className="p-2.5 text-[20px] font-medium ">
+                <Link href="/blogs">
+                  Blog
+                </Link>
+              </li>
+              <li className="p-2.5 text-[20px] font-medium ">
                 <Link href="/">
                   Contact
                 </Link>
@@ -91,6 +96,11 @@ const Navbar = () => {
               <li>
                 <Link href="/" onClick={() => setOpen(false)}>
                   Home
+                </Link>
+              </li>
+              <li>
+                <Link href="/blogs" onClick={() => setOpen(false)}>
+                  Blog
                 </Link>
               </li>
               <li>

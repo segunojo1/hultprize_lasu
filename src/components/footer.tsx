@@ -30,6 +30,16 @@ const Footer = () => {
               <ul className="flex flex-col gap-4">
                 <li>
                   <Link
+                    href="/blogs"
+                    className="font-poppins text-[18px] font-normal leading-[100%] tracking-[0px] text-white transition-opacity duration-200 hover:opacity-80"
+                    tabIndex={0}
+                    aria-label="Read stories from Hult Prize LASU"
+                  >
+                    Blog
+                  </Link>
+                </li>
+                <li>
+                  <Link
                     href="/about"
                     className="font-poppins text-[18px] font-normal leading-[100%] tracking-[0px] text-white transition-opacity duration-200 hover:opacity-80"
                     tabIndex={0}

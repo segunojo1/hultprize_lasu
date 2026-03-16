@@ -14,7 +14,7 @@ export default function Home() {
       <Hero />
       <Impact />
       <Winners />
-      {/* <New /> */}
+      <New />
       <GetInvolved />
       <PartnerWithUs />
       <Footer />
