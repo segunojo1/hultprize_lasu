@@ -1,15 +1,15 @@
 import type { StaticImageData } from "next/image";
-import img0047 from "@/app/blogs/whisper-ai-emerges-victorious/assets/IMG-20260301-WA0047.jpg";
-import img0053 from "@/app/blogs/whisper-ai-emerges-victorious/assets/IMG-20260301-WA0053.jpg";
+import img0047 from "@/app/blogs/whisper-ai-emerges-victorious/assets/main_demo/student-refining.jpg";
+import img0053 from "@/app/blogs/whisper-ai-emerges-victorious/assets/main_demo/pitch-energy.jpg";
 import img0058 from "@/app/blogs/whisper-ai-emerges-victorious/assets/IMG_0058.jpg";
-import img9708 from "@/app/blogs/whisper-ai-emerges-victorious/assets/IMG_9708.jpg";
+import img9708 from "@/app/blogs/whisper-ai-emerges-victorious/assets/main_demo/demoday.jpg";
 import img9729 from "@/app/blogs/whisper-ai-emerges-victorious/assets/IMG_9729.jpg";
-import img9768 from "@/app/blogs/whisper-ai-emerges-victorious/assets/IMG_9768.jpg";
-import img9823 from "@/app/blogs/whisper-ai-emerges-victorious/assets/IMG_9823.jpg";
-import img9830 from "@/app/blogs/whisper-ai-emerges-victorious/assets/IMG_9830.jpg";
+import img9768 from "@/app/blogs/whisper-ai-emerges-victorious/assets/main_demo/founders-pitch.jpg";
+import img9823 from "@/app/blogs/whisper-ai-emerges-victorious/assets/main_demo/campus-atm.jpg";
+import img9830 from "@/app/blogs/whisper-ai-emerges-victorious/assets/main_demo/other-finalists.jpg";
 import img9848 from "@/app/blogs/whisper-ai-emerges-victorious/assets/IMG_9848.jpg";
-import img9878 from "@/app/blogs/whisper-ai-emerges-victorious/assets/IMG_9878.jpg";
-import img9912 from "@/app/blogs/whisper-ai-emerges-victorious/assets/IMG_9912.jpg";
+import img9878 from "@/app/blogs/whisper-ai-emerges-victorious/assets/main_demo/every-announcement.jpg";
+import img9912 from "@/app/blogs/whisper-ai-emerges-victorious/assets/main_demo/momentum-shifts.jpg";
 
 export type BlogImage = {
   src: string | StaticImageData;
@@ -21,7 +21,8 @@ export type BlogImage = {
 export const featuredPost = {
   slug: "whisper-ai-emerges-victorious",
   category: "Campus News",
-  title: "Whisper AI Emerges Victorious as Hult Prize LASU Crowns a New Generation of Unlimited Disruptors",
+  title:
+    "Whisper AI Emerges Victorious as Hult Prize LASU Crowns a New Generation of Unlimited Disruptors",
   excerpt:
     "WhisperAI leads a standout 2026 Hult Prize LASU finale after months of mentorship, demo-day refinement, and a fiercely competitive showcase of social innovation.",
   publishedAt: "March 16, 2026",
@@ -35,7 +36,7 @@ export const featuredPost = {
       heading: "A charged finale for LASU innovators",
       paragraphs: [
         "The atmosphere at Lagos State University was electric on February 27, 2026, as the Hult Prize On-Campus program reached its grand finale. Following months of intensive training, mentorship, and a rigorous Demo Day in January, 21 student-led teams took to the stage to prove that LASU remains a powerhouse for social entrepreneurship and innovation.",
-        "Under the global theme of \"Unlimited,\" this year’s competition challenged students to push the boundaries of conventional business, tasking them to build social enterprises that are not only profitable but also possess the limitless potential to solve the world’s most pressing social issues.",
+        'Under the global theme of "Unlimited," this year’s competition challenged students to push the boundaries of conventional business, tasking them to build social enterprises that are not only profitable but also possess the limitless potential to solve the world’s most pressing social issues.',
       ],
     },
     {
@@ -64,7 +65,7 @@ export const featuredPost = {
       heading: "What comes next",
       paragraphs: [
         "The conclusion of the On-Campus event is only the beginning. The winning team, WhisperAI, is now entering an internal acceleration phase facilitated by the Hult Prize LASU organizing committee to refine its pitch and operations for the next round of the global competition.",
-        "\"The caliber of pitches this year was significantly higher than we’ve seen previously,\" noted Olawuyi Gideon, previous Campus Director and Youth Leader. Campus Director Ashiru Sheriffdeen Olanrewaju added that the quality of innovation produced this year will be a strong contender at the National level.",
+        '"The caliber of pitches this year was significantly higher than we’ve seen previously," noted Olawuyi Gideon, previous Campus Director and Youth Leader. Campus Director Ashiru Sheriffdeen Olanrewaju added that the quality of innovation produced this year will be a strong contender at the National level.',
         "As the Unlimited Disruptors of LASU prepare to take their ideas to the world, one thing is clear: the era of student-led entrepreneurship at Lagos State University has reached a new, sophisticated milestone.",
       ],
     },
